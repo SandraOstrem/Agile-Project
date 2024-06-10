@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOADING</title>
+    <link rel="stylesheet" href="waiting_page.css">
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <img id="walking_man" src="/images/walk.png" alt="Adventure_continues">
+            <p id="adventure_continues">"Reisen fortsetter..."</p>
+            <p id="put_phone_away">Du kan legge bort mobilen nå</p>
+        </div>
+    </div>
+
+<script>
+        setTimeout(function(){
+            window.location.href = 'feedback_page.html'; 
+        }, 10000); // 10s
+</script> 
+</body>
+</html>

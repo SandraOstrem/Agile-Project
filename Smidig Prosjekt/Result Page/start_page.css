@@ -1,0 +1,27 @@
+h3 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 4.5%;
+}
+
+p {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#gif {
+  width: 130px;
+  top: 45%;
+  position: absolute;
+  left: 45%;
+}
+
+.text {
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-left: 40%;
+  margin-right: 40%;
+}

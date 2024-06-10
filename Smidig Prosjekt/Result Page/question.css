@@ -1,0 +1,32 @@
+.options{
+    position: absolute;
+    height: 50%;
+    width: 100%;
+}
+
+
+.options > a > button {
+    height: 45%;
+    width: 25%;
+    margin: 5%;
+    margin-bottom: 0%;
+    margin-top: 2%;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+
+.content > h3{
+    margin-top: 5%;
+    
+    
+}
+#Timer > h1 {
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}

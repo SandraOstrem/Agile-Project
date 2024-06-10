@@ -1,0 +1,35 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOADING</title>
+    <link rel="stylesheet" href="start_waiting_page.css">
+    <link rel="stylesheet" href="background.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="content">
+            <div class="box">
+             <p id="p1"> Loading....</p>
+             <p id="p2"> Forestillingen starter snart</p>
+             <p id="p3"> Hei /brukernavn/, dette er en interaktiv forestilling, <br> underveis i forestillingen vil du få mulighet <br>
+              til å ta valg som påvirker handlingen i historien,<br> så ha mobilen klar!</p>
+                
+             </div>
+
+             <img src="/images/gif-waiting.gif" id="gif">
+        </div>
+    </div>
+
+   
+<script>
+        setTimeout(function(){
+            window.location.href = 'question1_page.html'; 
+        }, 10000); // 10s
+</script>
+    
+    
+</body>
+</html>

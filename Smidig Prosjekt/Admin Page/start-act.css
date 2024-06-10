@@ -1,0 +1,110 @@
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+    background-color: #FFE8BD; 
+    position: relative;
+    overflow: hidden;
+}
+
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    
+    background-image: url('/images/backgroundtree.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    opacity: 0.5; 
+}
+
+.content {
+    position: relative; 
+    z-index: 1; 
+    text-align: center;
+    padding-top: 3%;
+    height: 95%;
+}
+
+.container{
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100%;
+}
+h1{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 90px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+
+.container > a > button {
+    width: 15%;
+    height: 25%;
+    background-color: #86BC8B;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1.5px solid black;
+    margin: 1%;
+    border-radius: 8px;
+}
+.container > a > button:hover {
+    background-color: #4C8B53;
+}
+.container > a > button > p{
+    font-size: x-large;
+}
+
+/* logout og mainmenu knapp*/
+.bottons{
+    position: absolute;
+    bottom: 7%;
+    width: 100%;
+    height: 8%;
+}
+
+#logout{
+    position: absolute;
+    right: 5%;
+    height: 100%;
+    width: 10%;
+
+    text-align: center;
+    border-radius: 30px;
+    border: 1.5px solid black;
+    color: black;
+    background-color: #f1efef;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#logout:hover{
+    background-color: #989898;
+    
+}
+#mainmenu{
+    position: absolute;
+    left: 5%;
+    height: 100%;
+    width: 10%;
+    
+    text-align: center;
+    border-radius: 30px;
+    border: 1.5px solid black;
+    color: black;
+    background-color: #f1efef;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#mainmenu:hover{
+    background-color: #989898;
+}
+

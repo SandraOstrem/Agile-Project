@@ -1,0 +1,125 @@
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.background {
+  height: 100%;
+  width: 100%;
+  background-color: #ffe8bd;
+  position: relative;
+  overflow: hidden;
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("/images/backgroundtree.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 3%;
+  height: 95%;
+}
+
+.box-input {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  background-color: #ffe8bd;
+  border-radius: 15%;
+  width: 20%;
+  height: 50%;
+  border: 1.5px solid black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#valgListe {
+  position: absolute;
+  right: 25%;
+  top: 25%;
+  border-radius: 15%;
+  background-color: #ffe8bd;
+  width: 20%;
+  height: 50%;
+  border: 1.5px solid black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#valgalt {
+  color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 90px;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 15%;
+}
+
+#addbtn {
+  background-color: #86bc8b;
+}
+
+#addbtn:hover {
+  background-color: #4c8b53;
+}
+
+#output > input {
+  width: 90%;
+  height: 6%;
+}
+
+/* logout og mainmenu knapp*/
+.bottons {
+  position: absolute;
+  bottom: 7%;
+  width: 100%;
+  height: 8%;
+}
+
+#logout {
+  position: absolute;
+  right: 5%;
+  height: 100%;
+  width: 10%;
+
+  text-align: center;
+  border-radius: 30px;
+  border: 1.5px solid black;
+  color: black;
+  background-color: #f1efef;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#logout:hover {
+  background-color: #989898;
+}
+#mainmenu {
+  position: absolute;
+  left: 5%;
+  height: 100%;
+  width: 10%;
+
+  text-align: center;
+  border-radius: 30px;
+  border: 1.5px solid black;
+  color: black;
+  background-color: #f1efef;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#mainmenu:hover {
+  background-color: #989898;
+}
+.ptext {
+  margin-top: 25%;
+}

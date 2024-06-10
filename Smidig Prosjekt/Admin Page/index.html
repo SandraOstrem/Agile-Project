@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOADING</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+</head>
+    <body>
+        <div class="background">
+            <div class="content">
+                <h1 id="valgalt">Opprett skuespill</h1>
+                <div class="bottons">
+                    <a href="admin_login.html"><button id="logout">Logout</button></a>
+                    <a href="dashboard.html"><button id="mainmenu">Hovedmeny</button></a>
+                </div>
+            <div class="box-input">
+                <h3>Spørsmål:</h3>
+                <form id="formId" onsubmit="">
+                    
+                        <input id="valgSpm" type="text" placeholder="Spørsmål:" required>
+                    <p class="ptext"> Alternativer:</p>
+                        <input id="valg1" type="text" placeholder="Alternativ 1:" required>
+                        <input id="valg2" type="text" placeholder="Alternativ 2:" required>
+                        <input id="valg3" type="text" placeholder="Alternativ 3:">
+                        <input id="valg4" type="text" placeholder="Alternativ 4:">
+                    
+                </form>
+                <button type="submit" id="addBtn">Legg til valg</button>
+            </div>  
+                <div id="valgListe">
+                    <h3>Spørsmål: </h3>
+                    <div id="output"></div>
+                </div>
+            </div>     
+        </div>
+    </body>
+    <script>
+    </script>
+</html>

@@ -14,7 +14,8 @@
             "args": [
                 "run",
                 "--no-debugger",
-                "--no-reload"
+                "--no-reload",
+                "--port=5500"
             ],
             "jinja": true
         }

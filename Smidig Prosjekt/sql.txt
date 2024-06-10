@@ -1,0 +1,31 @@
+-- Drop the existing database if it exists
+DROP DATABASE IF EXISTS smidigdb;
+
+-- Creates a new database called smidigdb
+CREATE DATABASE smidigdb;
+
+-- Selecting the new database called smidigdb
+USE smidigdb;
+
+-- Create the table for storing username and password
+CREATE TABLE login (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    password VARCHAR(50) NOT NULL
+);
+
+-- Create the table for storing questions and choices
+CREATE TABLE questions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    question_text TEXT NOT NULL,
+    choice1 VARCHAR(255) NOT NULL,
+    choice2 VARCHAR(255) NOT NULL,
+    choice3 VARCHAR(255),
+    choice4 VARCHAR(255)
+);
+
+-- Create the table for storing feedback from users
+CREATE TABLE feedback (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    feedback_text TEXT
+);

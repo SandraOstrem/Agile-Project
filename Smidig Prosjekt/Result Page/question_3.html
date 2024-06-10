@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOADING</title>
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="question.css">
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <div id="Timer">
+                <h1>30</h1>
+            </div>
+            <div class="header">
+                <h1>Du mister en sko, hva gjør du?</h1>
+            </div>
+            
+            
+            <h3>Velg et av følgende alternativer</h3>
+            <div class="options">
+                
+                <a href="">
+                <button>A - Går tilbake</button>
+                <button>B - Lager en ny</button>
+                <button>C - Fortsett uten sko</button>
+                <button>D - Stjel skoen til noen andre</button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var timeLeft = 30;
+            var elem = document.getElementById('Timer');
+
+            var timerId = setInterval(countdown, 1000);
+            var text = "Tiden er ute"
+
+
+            function countdown() {
+                if (timeLeft == 0) {
+                    clearTimeout(timerId);
+                    window.location.href = 'bigscreen_result3.html'; 
+                } else {
+                    elem.innerHTML = '<h1>' + timeLeft + '</h1>';
+                    timeLeft--;
+                }
+            }
+        });
+    </script>
+</body>
+</html>
